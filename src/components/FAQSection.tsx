@@ -42,18 +42,18 @@ export default function FAQSection() {
   };
 
   return (
-    <div id="faq-accordion-container" className="max-w-4xl mx-auto mt-16 bg-[#6B4226]/5 rounded-3xl p-6 sm:p-10 border border-[#6B4226]/10 shadow-sm">
+    <div id="faq-accordion-container" className="max-w-4xl mx-auto mt-16 bg-neutral-50 rounded-3xl p-6 sm:p-10 border border-neutral-200/50 shadow-md">
       <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-1.5 bg-[#6B4226]/10 px-3.5 py-1 rounded-full text-[#6B4226] text-xs font-bold uppercase tracking-wider font-mono mb-2">
+        <div className="inline-flex items-center gap-1.5 bg-[#10B981]/10 px-3.5 py-1 rounded-full text-[#10B981] text-xs font-bold uppercase tracking-wider font-mono mb-2">
           <HelpCircle className="w-3.5 h-3.5" />
           <span>Suporte & Dúvidas</span>
         </div>
         
-        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#6B4226] tracking-tight">
+        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#132E1C] tracking-tight">
           Perguntas Frequentes
         </h3>
         
-        <p className="text-[#6B4226]/70 text-sm mt-2 max-w-lg mx-auto">
+        <p className="text-neutral-500 text-sm mt-2 max-w-lg mx-auto leading-relaxed">
           Tudo o que você precisa saber sobre o processo de encomendar, receber e manter suas gaiolas artesanais.
         </p>
       </div>
@@ -64,24 +64,24 @@ export default function FAQSection() {
           return (
             <div
               key={idx}
-              className="bg-white rounded-2xl border border-[#6B4226]/15 hover:border-[#6B4226]/35 overflow-hidden transition-all duration-300 shadow-sm"
+              className="bg-white rounded-2xl border border-neutral-150 hover:border-[#15803D]/45 overflow-hidden transition-all duration-300 shadow-sm"
             >
               <button
                 type="button"
                 onClick={() => handleToggle(idx)}
-                className="w-full text-left px-5 sm:px-6 py-4 flex items-center justify-between text-[#6B4226] hover:bg-[#6B4226]/5 focus:outline-none transition-colors select-none"
+                className="w-full text-left px-5 sm:px-6 py-4 flex items-center justify-between text-[#132E1C] hover:bg-neutral-55 focus:outline-none transition-colors select-none cursor-pointer"
               >
                 <span className="font-serif font-bold text-sm sm:text-base pr-4 leading-snug">
                   {faq.question}
                 </span>
-                <span className="bg-[#6B4226]/10 text-[#6B4226] p-1.5 rounded-lg shrink-0">
+                <span className="bg-emerald-50 text-[#15803D] p-1.5 rounded-lg shrink-0">
                   {isOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                 </span>
               </button>
 
               {/* Collapsible Answer Pane */}
               {isOpen && (
-                <div className="px-5 sm:px-6 pb-5 pt-1 text-sm text-[#6B4226]/80 leading-relaxed border-t border-[#6B4226]/5 font-medium animate-fade-in">
+                <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 font-medium animate-fade-in">
                   {faq.answer}
                 </div>
               )}

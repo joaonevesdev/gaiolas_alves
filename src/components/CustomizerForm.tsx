@@ -128,7 +128,7 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
   };
 
   return (
-    <div className="bg-white rounded-[2.5rem] p-6 sm:p-10 border border-[#6B4226]/12 shadow-lg">
+    <div className="bg-white rounded-[2.5rem] p-6 sm:p-10 border border-neutral-200/50 shadow-lg">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
         {/* Left Column: Form inputs */}
@@ -136,7 +136,7 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono mb-1.5">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono mb-1.5">
                   Seu Nome *
                 </label>
                 <input
@@ -145,12 +145,12 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Ex: João da Silva"
-                  className="w-full bg-white border border-[#6B4226]/20 rounded-xl px-4 py-2.5 text-sm text-[#6B4226] placeholder-[#6B4226]/40 focus:outline-none focus:ring-2 focus:ring-[#6B4226]/40"
+                  className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-2.5 text-sm text-[#132E1C] placeholder-[#132E1C]/40 focus:outline-none focus:ring-2 focus:ring-[#15803D]/20 focus:border-[#15803D]"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono mb-1.5">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono mb-1.5">
                   Seu WhatsApp *
                 </label>
                 <input
@@ -159,20 +159,20 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                   value={whatsapp}
                   onChange={(e) => setWhatsapp(e.target.value)}
                   placeholder="Ex: (11) 99999-9999"
-                  className="w-full bg-white border border-[#6B4226]/20 rounded-xl px-4 py-2.5 text-sm text-[#6B4226] placeholder-[#6B4226]/40 focus:outline-none focus:ring-2 focus:ring-[#6B4226]/40"
+                  className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-2.5 text-sm text-[#132E1C] placeholder-[#132E1C]/40 focus:outline-none focus:ring-2 focus:ring-[#15803D]/20 focus:border-[#15803D]"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono mb-1.5">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono mb-1.5">
                   Espécie de Pássaro *
                 </label>
                 <select
                   value={bird}
                   onChange={(e) => setBird(e.target.value)}
-                  className="w-full bg-white border border-[#6B4226]/20 rounded-xl px-4 py-2.5 text-sm text-[#6B4226] focus:outline-none focus:ring-2 focus:ring-[#6B4226]/40"
+                  className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-2.5 text-sm text-[#132E1C] focus:outline-none focus:ring-2 focus:ring-[#15803D]/20 focus:border-[#15803D] cursor-pointer"
                 >
                   <option value="Trinca-Ferro">Trinca-Ferro / Pixarro</option>
                   <option value="Curió">Curió</option>
@@ -187,13 +187,13 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono mb-1.5">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono mb-1.5">
                   Madeira Principal *
                 </label>
                 <select
                   value={wood}
                   onChange={(e) => setWood(e.target.value)}
-                  className="w-full bg-white border border-[#6B4226]/20 rounded-xl px-4 py-2.5 text-sm text-[#6B4226] focus:outline-none focus:ring-2 focus:ring-[#6B4226]/40"
+                  className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-2.5 text-sm text-[#132E1C] focus:outline-none focus:ring-2 focus:ring-[#15803D]/20 focus:border-[#15803D] cursor-pointer"
                 >
                   <option value="Cedro Rosa">Cedro Rosa (Tradicional, Leve)</option>
                   <option value="Imbuia Nobre">Imbuia Nobre (Escura, Alta Densidade)</option>
@@ -206,17 +206,17 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
             </div>
 
             {/* Custom Sliders for Dimensions */}
-            <div className="bg-white p-4 rounded-xl border border-[#6B4226]/10 space-y-4">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono block">
+            <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-100 space-y-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono block">
                 Dimensões Desejadas em Centímetros (cm)
               </span>
 
               <div className="space-y-3">
                 {/* Comprimento */}
                 <div>
-                  <div className="flex justify-between text-xs text-[#6B4226] mb-1 font-medium">
+                  <div className="flex justify-between text-xs text-neutral-600 mb-1 font-medium">
                     <span>Comprimento (Largura Frontal):</span>
-                    <span className="font-bold">{width} cm</span>
+                    <span className="font-bold text-[#132E1C]">{width} cm</span>
                   </div>
                   <input
                     type="range"
@@ -224,15 +224,15 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                     max="100"
                     value={width}
                     onChange={(e) => setWidth(Number(e.target.value))}
-                    className="w-full accent-[#6B4226] bg-[#6B4226]/10 h-1.5 rounded-lg appearance-none cursor-pointer"
+                    className="w-full accent-[#15803D] bg-neutral-200 h-1.5 rounded-lg appearance-none cursor-pointer"
                   />
                 </div>
 
                 {/* Altura */}
                 <div>
-                  <div className="flex justify-between text-xs text-[#6B4226] mb-1 font-medium">
+                  <div className="flex justify-between text-xs text-neutral-600 mb-1 font-medium">
                     <span>Altura Total:</span>
-                    <span className="font-bold">{height} cm</span>
+                    <span className="font-bold text-[#132E1C]">{height} cm</span>
                   </div>
                   <input
                     type="range"
@@ -240,15 +240,15 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                     max="80"
                     value={height}
                     onChange={(e) => setHeight(Number(e.target.value))}
-                    className="w-full accent-[#6B4226] bg-[#6B4226]/10 h-1.5 rounded-lg appearance-none cursor-pointer"
+                    className="w-full accent-[#15803D] bg-neutral-200 h-1.5 rounded-lg appearance-none cursor-pointer"
                   />
                 </div>
 
                 {/* Profundidade */}
                 <div>
-                  <div className="flex justify-between text-xs text-[#6B4226] mb-1 font-medium">
+                  <div className="flex justify-between text-xs text-neutral-600 mb-1 font-medium">
                     <span>Profundidade (Lateral):</span>
-                    <span className="font-bold">{depth} cm</span>
+                    <span className="font-bold text-[#132E1C]">{depth} cm</span>
                   </div>
                   <input
                     type="range"
@@ -256,7 +256,7 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                     max="60"
                     value={depth}
                     onChange={(e) => setDepth(Number(e.target.value))}
-                    className="w-full accent-[#6B4226] bg-[#6B4226]/10 h-1.5 rounded-lg appearance-none cursor-pointer"
+                    className="w-full accent-[#15803D] bg-neutral-200 h-1.5 rounded-lg appearance-none cursor-pointer"
                   />
                 </div>
               </div>
@@ -265,7 +265,7 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
             {/* Arame and details */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono mb-1.5">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono mb-1.5">
                   Malha / Tipo de Grade
                 </label>
                 <div className="flex gap-2">
@@ -274,10 +274,10 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                       key={item}
                       type="button"
                       onClick={() => setWire(item)}
-                      className={`flex-1 py-2 px-3 text-xs rounded-lg font-semibold border transition-all ${
+                      className={`flex-1 py-2 px-3 text-xs rounded-xl font-bold border transition-all cursor-pointer ${
                         wire === item
-                          ? 'bg-[#6B4226] text-white border-[#6B4226]'
-                          : 'bg-white text-[#6B4226] border-[#6B4226]/20 hover:bg-[#6B4226]/5'
+                          ? 'bg-[#132E1C] text-white border-[#132E1C] shadow-sm'
+                          : 'bg-white text-[#132E1C] border-neutral-200 hover:bg-neutral-50'
                       }`}
                     >
                       {item}
@@ -287,11 +287,11 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono mb-1.5">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono mb-1.5">
                   Acabamento do Verniz
                 </label>
                 <div className="flex gap-2">
-                  <span className="text-xs text-[#6B4226]/70 leading-relaxed block py-1 font-medium">
+                  <span className="text-xs text-neutral-500 leading-relaxed block py-1 font-medium">
                     *Todos recebem proteção marítima anti-mofo e anti-UV padrão para conservar a madeira por décadas*.
                   </span>
                 </div>
@@ -300,7 +300,7 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
 
             {/* Observations */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-[#6B4226] font-mono mb-1.5">
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#132E1C] font-mono mb-1.5">
                 Observações Especiais ou Detalhes Solicitados
               </label>
               <textarea
@@ -308,7 +308,7 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                 onChange={(e) => setExtraInfo(e.target.value)}
                 placeholder="Ex sugerido: Gostaria que tivesse 2 passadores do lado direito, acabamento em verniz fosco e poleiros anatômicos com buraquinho de cortiça."
                 rows={3}
-                className="w-full bg-white border border-[#6B4226]/20 rounded-xl px-4 py-2.5 text-sm text-[#6B4226] placeholder-[#6B4226]/40 focus:outline-none focus:ring-2 focus:ring-[#6B4226]/40"
+                className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-2.5 text-sm text-[#132E1C] placeholder-[#132E1C]/40 focus:outline-none focus:ring-2 focus:ring-[#15803D]/20 focus:border-[#15803D]"
               />
             </div>
 
@@ -316,19 +316,19 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <button
                 type="submit"
-                className="flex-1 bg-[#2F4F2F] hover:bg-[#203620] text-white font-bold py-3 px-6 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all"
+                className="flex-1 bg-[#2EB875] hover:bg-[#1E8A54] text-white font-bold py-3.5 px-6 rounded-xl text-xs sm:text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all cursor-pointer hover:scale-[1.01]"
               >
-                <Send className="w-4 h-4 text-emerald-300" />
-                <span>Solicitar Orçamento pelo WhatsApp</span>
+                <Send className="w-4 h-4 text-emerald-100" />
+                <span>Solicitar Orçamento no WhatsApp</span>
               </button>
 
               <button
                 type="button"
                 onClick={handleReset}
-                className="py-3 px-5 border border-[#6B4226]/20 text-[#6B4226] hover:bg-[#6B4226]/5 font-semibold rounded-xl text-sm transition-all flex items-center justify-center gap-2"
+                className="py-3.5 px-5 border border-neutral-200 text-[#132E1C] hover:bg-neutral-50 font-bold rounded-xl text-xs sm:text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <RotateCcw className="w-4 h-4" />
-                <span>Limpar Simulador</span>
+                <RotateCcw className="w-4 h-4 text-emerald-700" />
+                <span>Limpar</span>
               </button>
             </div>
 
@@ -345,19 +345,19 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
 
         {/* Right Column: Visual State Preview card & history logs */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="bg-white rounded-2xl border border-[#6B4226]/10 p-5 shadow-sm space-y-4">
+          <div className="bg-white rounded-2xl border border-neutral-200/50 p-5 shadow-md space-y-4">
             <div className="flex items-center justify-between">
-              <h4 className="font-serif text-base font-bold text-[#6B4226] flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-amber-500" />
+              <h4 className="font-serif text-base font-bold text-[#132E1C] flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-emerald-600 animate-pulse" />
                 <span>Esboço 3D Iterativo</span>
               </h4>
-              <span className="text-[9px] font-mono tracking-widest text-[#6B4226]/60 font-black uppercase">
+              <span className="text-[9px] font-mono tracking-widest text-[#132E1C]/60 font-bold uppercase">
                 Gaiolas Alves
               </span>
             </div>
 
             {/* Interactive cage wireframe simulator render */}
-            <div className="relative aspect-video rounded-xl overflow-hidden border border-[#6B4226]/10 flex items-center justify-center p-4 bg-gradient-to-br from-amber-50 to-[#F5E6D3]/10">
+            <div className="relative aspect-video rounded-xl overflow-hidden border border-neutral-100 flex items-center justify-center p-4 bg-gradient-to-br from-emerald-50/10 to-neutral-50">
               
               {/* Outer wooden border simulated by selected wood color */}
               <div 
@@ -385,45 +385,45 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
                 <div className="absolute right-[20%] left-[20%] top-[60%] h-2.5 bg-amber-900/60 rounded border border-amber-950/20" />
                 
                 {/* Small indicator display label */}
-                <span className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-[#6B4226] text-white font-mono text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-wider whitespace-nowrap">
+                <span className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-[#132E1C] text-white font-mono text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-wider whitespace-nowrap">
                   {width} x {height} x {depth} cm
                 </span>
               </div>
             </div>
 
             {/* Configured values summary */}
-            <div className="space-y-2 text-xs border-t border-[#6B4226]/10 pt-4">
+            <div className="space-y-2 text-xs border-t border-neutral-100 pt-4">
               <div className="flex justify-between">
-                <span className="text-[#6B4226]/60 font-medium font-mono">Espécie de Pássaro:</span>
-                <span className="font-bold text-[#6B4226]">{bird}</span>
+                <span className="text-neutral-400 font-medium font-mono uppercase text-[9px]">Espécie:</span>
+                <span className="font-bold text-[#132E1C]">{bird}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#6B4226]/60 font-medium font-mono">Tipo de Madeira:</span>
-                <span className="font-bold text-[#6B4226]">{wood}</span>
+                <span className="text-neutral-400 font-medium font-mono uppercase text-[9px]">Tipo Madeira:</span>
+                <span className="font-bold text-[#132E1C]">{wood}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#6B4226]/60 font-medium font-mono">Material da Grade:</span>
-                <span className="font-bold text-[#6B4226]">{wire}</span>
+                <span className="text-neutral-400 font-medium font-mono uppercase text-[9px]">Gradeamento:</span>
+                <span className="font-bold text-[#132E1C]">{wire}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#6B4226]/60 font-medium font-mono">Volume Aproximado:</span>
-                <span className="font-mono font-bold text-[#6B4226]">
+                <span className="text-neutral-400 font-medium font-mono uppercase text-[9px]">Capacidade aprox:</span>
+                <span className="font-mono font-bold text-[#132E1C]">
                   {Math.round((width * height * depth) / 1000)} Litros
                 </span>
               </div>
 
               {/* Estimate Price badge */}
-              <div className="bg-[#2F4F2F]/10 border border-[#2F4F2F]/20 rounded-xl p-3 mt-4 flex items-center justify-between">
+              <div className="bg-emerald-50 border border-[#15803D]/15 rounded-xl p-3 mt-4 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] uppercase font-mono tracking-wider font-semibold text-[#2F4F2F] block">
-                    Orçamento Inicial Estimado
+                  <span className="text-[9px] uppercase font-mono tracking-wider font-extrabold text-[#15803D] block">
+                    Orçamento Estimado (Sugerido)
                   </span>
-                  <span className="text-lg font-serif font-black text-[#2F4F2F]">
+                  <span className="text-lg font-serif font-black text-[#132E1C]">
                     R$ {getEstimatedPrice().toFixed(2)}
                   </span>
                 </div>
-                <span className="text-[9px] bg-[#2F4F2F] text-white px-2 py-1 rounded font-bold uppercase font-mono tracking-wider">
-                  Sujeito à Alteração
+                <span className="text-[8px] bg-[#15803D] text-white px-2 py-1 rounded font-bold uppercase font-mono tracking-widest">
+                  Sujeito a Ajuste
                 </span>
               </div>
             </div>
@@ -431,23 +431,23 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
 
           {/* User Order History logs */}
           {recentOrders.length > 0 && (
-            <div className="bg-white rounded-2xl border border-[#6B4226]/10 p-4 shadow-sm">
-              <div className="flex items-center gap-1.5 mb-3 border-b border-[#6B4226]/5 pb-2 text-[#6B4226]">
-                <History className="w-4 h-4" />
-                <span className="font-serif text-xs font-black uppercase tracking-wider">
-                  Simulações Recentes no Navegador
+            <div className="bg-white rounded-2xl border border-neutral-200/50 p-4 shadow-sm">
+              <div className="flex items-center gap-1.5 mb-3 border-b border-neutral-100 pb-2 text-[#132E1C]">
+                <History className="w-4 h-4 text-[#15803D]" />
+                <span className="font-serif text-xs font-bold uppercase tracking-wider">
+                  Simulações Recentessalvas
                 </span>
               </div>
               
               <div className="space-y-2.5 max-h-[160px] overflow-y-auto pr-1">
                 {recentOrders.map((ord) => (
-                  <div key={ord.id} className="text-[11px] bg-[#F5E6D3]/30 rounded-lg p-2.5 flex items-center justify-between border border-[#6B4226]/5">
+                  <div key={ord.id} className="text-[11px] bg-neutral-50 rounded-lg p-2.5 flex items-center justify-between border border-neutral-100">
                     <div>
-                      <div className="font-bold text-[#6B4226]">{ord.bird} ({ord.wood})</div>
-                      <div className="text-[#6B4226]/70 font-mono mt-0.5">{ord.dimensions} • Solicitado por: {ord.name}</div>
+                      <div className="font-bold text-[#132E1C]">{ord.bird} ({ord.wood})</div>
+                      <div className="text-neutral-400 font-mono mt-0.5">{ord.dimensions} • Cliente: {ord.name}</div>
                     </div>
-                    <span className="text-[9px] font-mono bg-emerald-600 text-white font-black px-1.5 py-0.5 rounded uppercase">
-                      Ativo
+                    <span className="text-[9px] font-mono bg-[#2EB875] text-white font-black px-1.5 py-0.5 rounded uppercase">
+                      Salvo
                     </span>
                   </div>
                 ))}
@@ -456,10 +456,10 @@ _Enviado via simulador do site oficial. Entre em contato comigo!_`;
           )}
 
           {/* Environmental Disclaimer */}
-          <div className="flex gap-2 p-3 bg-amber-500/10 border border-amber-500/20 text-amber-900 rounded-xl text-[11px] font-medium leading-relaxed">
+          <div className="flex gap-2 p-3 bg-amber-50 border border-amber-200 text-amber-900 rounded-xl text-[11px] font-medium leading-relaxed">
             <AlertTriangle className="w-4 h-4 shrink-0 text-amber-700 mt-0.5" />
             <span>
-              <strong>Garantia GAIOLAS ALVES:</strong> Todas as nossas madeiras de luxo provêm de reflorestamento sustentável ou manejo certificado. Nós não compactuamos com extração predatória de recursos naturais.
+              <strong>Garantia Sustentável:</strong> Nossas madeiras provêm apenas de produtores licenciados que praticam o manejo correto. Não compactuamos com comércio ilegal florestal.
             </span>
           </div>
 
