@@ -1,0 +1,6 @@
+{
+  "name": "Gaiolas Alves",
+  "description": "Fábrica de gaiolas artesanais de madeira de alta qualidade para pássaros de estimação. Especializada em modelos padrão e sob medida, unindo elegância, durabilidade e acabamento refinado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
