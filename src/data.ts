@@ -4,12 +4,15 @@
  */
 
 import { Product, SpeciesCategory, Testimonial, GalleryImage } from './types';
+import heroCage from './assets/images/hero_cage_1782058675946.jpg';
+import workshopCraft from './assets/images/workshop_craft_1782058691823.jpg';
+import woodJoints from './assets/images/wood_joints_1782058706435.jpg';
 
 // Let's use the actual paths for the generated images!
 // For development convenience, we'll import them or use direct relative paths.
-const HERO_CAGE_PATH = '/src/assets/images/hero_cage_1782058675946.jpg';
-const WORKSHOP_PATH = '/src/assets/images/workshop_craft_1782058691823.jpg';
-const CLOSE_UP_PATH = '/src/assets/images/wood_joints_1782058706435.jpg';
+export const HERO_CAGE_PATH = heroCage;
+export const WORKSHOP_PATH = workshopCraft;
+export const CLOSE_UP_PATH = woodJoints;
 
 // Backup stylish fallback images if anything goes wrong
 const APP_COLORS = {

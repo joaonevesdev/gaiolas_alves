@@ -33,7 +33,9 @@ import {
   galleryImagesList, 
   testimonialsList, 
   getWhatsappLink, 
-  WHATS_APP_NUMBER 
+  WHATS_APP_NUMBER,
+  HERO_CAGE_PATH,
+  WORKSHOP_PATH
 } from './data';
 import { Product, GalleryImage } from './types';
 
@@ -180,7 +182,7 @@ export default function App() {
         <div className="lg:col-span-5 bg-white rounded-[2rem] p-5 border border-[#6B4226]/10 shadow-lg relative flex flex-col justify-between">
           <div className="relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square lg:aspect-[4/5] bg-amber-50">
             <img
-              src="/src/assets/images/hero_cage_1782058675946.jpg" 
+              src={HERO_CAGE_PATH} 
               alt="Gaiola Artesanal Alves Luxo"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -649,7 +651,7 @@ export default function App() {
           <div className="lg:col-span-5 bg-white p-5 rounded-[2.5rem] border border-[#6B4226]/12 shadow-md flex flex-col justify-between">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square lg:aspect-[4/5] bg-amber-50 h-full">
               <img
-                src="/src/assets/images/workshop_craft_1782058691823.jpg"
+                src={WORKSHOP_PATH}
                 alt="Oficina Gaiolas Alves"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
